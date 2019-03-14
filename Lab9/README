@@ -1,0 +1,31 @@
+1) A set
+
+Collection Type		Number of elements i/r		time
+LL			100000				5.810921857
+PQ			100000				5.877637575
+AL			100000				78.822315857
+V			100000				75.813289231
+AD			100000				5.8234523191
+St			100000				82.834628317
+
+2) LL, AD, PQ, V, AL, St
+3) Some collections are faster than others because they handle more iterations at a time than others. For instance, LinkedList processes the most data at a time, so it is the fastest. Stack on the other hand is significantly slower because it accesses the data differently. 
+
+removeRange	fI	tI	Time
+BC		small   small	O(n)
+WC		large	large	O(n^2)
+
+removeRangeV2	fI	tI	Time
+BC		small	small	O(n)
+WC		large	large	O(nlogn)
+
+4) We prefer the removeRange because the for loop conditions make more sense intuitively. 
+
+5) The first loop handles the sizes of our data input, while the second loop handles iterating over the number of trials within each of our data input. The third loop computes the time, mean, and standard
+deviation and compares them for our two methods.
+
+6) Our assumption was wrong, and v2 runs faster.
+
+7) We should put the above lines outside the main method declaration because static variables exist outside of the class, they don't need to change with a new instance of the class. This allows them to act as settings of the program determined by the user.
+
+8) Our peak cpu usage is 48.9% and our peak memory usage is around 97 million bytes
